@@ -1,0 +1,21 @@
+/* This puts my photo on the right side of the page. */
+
+.parkphoto {
+    float: right;
+    padding: 0px;
+    margin-left: 15px;
+}
+
+/* This sets the typeface of my page to Inconsolata. */
+html, body {
+    font-family: "Inconsolata", Helvetica, sans-serif;
+}
+
+/* This is gives the body of my page a max width of 800px and a padding of 5px. */
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+ 
+}
