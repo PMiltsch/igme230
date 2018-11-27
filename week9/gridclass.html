@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {margin: 0; margin: 0;}
+        #container { 
+            background-color: blueviolet;
+            width: 100vw;
+            height: 100vw;
+            
+        }
+        #mygrid { 
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 90%;
+            height: 100vw;
+            max-width: 1000vw;
+        }
+
+        #mygrid div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            border: 1px dotted black;
+            
+        }
+        
+        .headerbar {
+            grid-column: 1 / 4;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="mygrid">
+        <div class="headerbar">Cell 1</div>
+        <div>Cell 2</div>
+        <div>Cell 3</div>
+        <div>Cell 4</div>
+        <div>Cell 5</div>
+        <div>Cell 6</div>
+        <div>Cell 7</div>
+       
+
+
+    </div>
+</body>
+</html>
