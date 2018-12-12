@@ -1,0 +1,91 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkblue;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+
+#yourgrid {
+    display: grid;
+    grid-template-rows: 150px 30px 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a a" "b c" "b d" "e e";
+    width: 90vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    
+}
+
+
+
+
+header{
+    grid-area: a;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+article{
+    grid-area: b;
+    background-color: lightblue;
+}
+
+nav {
+    grid-area: c;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside {
+    grid-area: d;
+}
+
+footer{
+    grid-area: e;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.submenu{
+    display: none;
+
+}

@@ -53,40 +53,7 @@ nav {
 Your Formatting
 ***************/
 
-header {
-    grid-area: header;
-}
+
+    
 
 
-footer {
-    grid-area: footer
-}
-
-
-#yourgrid{
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "header" "sidenav" "article" "sidebar" "footer";
-    grid-template-rows: 1fr 2fr 10fr 2fr;
-}
-
-article, nav, aside {
-
-    /* formatting for visual clarity */
-   
-    margin: .5rem;
-    padding: .5rem;
-}
-
-
-@media screen and (min-width: 760px){
-    #yourgrid {
-        grid-template-areas: "header header header"  /* 1st row: header spans three columns  */
-        "sidenav article sidebar"  /* 2nd row: one element in each of 3 columns  */
-        "footer footer footer"; /* 3rd row: footer spans three columns */
-        grid-template-rows: 1fr 10fr 1fr 1fr;   /* defines relative height of four rows */
-        grid-template-columns: 50% 50%;   /* defines width of the 2 equal columns */
-    }
-
-
-}
